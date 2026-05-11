@@ -57,3 +57,4 @@ LOAD=$(awk '{print $1}' /proc/loadavg)
 
 echo "Final score: $SCORE / 100"
 echo "Recommendation: $([ $SCORE -ge 60 ] && echo 'EC2_CANDIDATE' || echo 'NOT_RECOMMENDED')"
+rm asset.sh
